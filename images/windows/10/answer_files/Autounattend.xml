@@ -116,6 +116,7 @@
                     <Order>3</Order>
                     <RequiresUserInput>false</RequiresUserInput>
                     <CommandLine>powershell -File E:\Enable-WindowsRemoteManagement.ps1</CommandLine>
+                    <Description>Enable WinRM</Description>
                 </SynchronousCommand>
             </FirstLogonCommands>
             <OOBE>
