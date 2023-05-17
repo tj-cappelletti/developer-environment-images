@@ -101,14 +101,14 @@
             </AutoLogon>
             <FirstLogonCommands>
                 <SynchronousCommand wcm:action="add">
-                    <CommandLine>cmd.exe /c powershell -Command &quot;Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force&quot;</CommandLine>
+                    <CommandLine>powershell -Command &quot;Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force&quot;</CommandLine>
                     <RequiresUserInput>true</RequiresUserInput>
                     <Order>1</Order>
                     <Description>Set Execution Policy 64 Bit</Description>
                 </SynchronousCommand>
                 <SynchronousCommand wcm:action="add">
                     <Order>2</Order>
-                    <CommandLine>C:\Windows\SysWOW64\cmd.exe /c powershell -Command &quot;Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force&quot;</CommandLine>
+                    <CommandLine>powershell -Command &quot;Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force&quot;</CommandLine>
                     <Description>Set Execution Policy 32 Bit</Description>
                     <RequiresUserInput>true</RequiresUserInput>
                 </SynchronousCommand>
@@ -117,6 +117,21 @@
                     <RequiresUserInput>false</RequiresUserInput>
                     <CommandLine>powershell -File E:\Enable-WindowsRemoteManagement.ps1</CommandLine>
                     <Description>Enable WinRM</Description>
+                </SynchronousCommand>
+                <SynchronousCommand wcm:action="add">
+                    <Order>4</Order>
+                    <Description>Disable hibernation</Description>
+                    <CommandLine>powercfg.exe /hibernate off</CommandLine>
+                </SynchronousCommand>
+                <SynchronousCommand wcm:action="add">
+                    <Order>5</Order>
+                    <CommandLine>powercfg /x -standby-timeout-ac 0</CommandLine>
+                    <Description>Set standby timeout to 0 on outlet</Description>
+                </SynchronousCommand>
+                <SynchronousCommand wcm:action="add">
+                    <Order>6</Order>
+                    <CommandLine>powercfg /x -standby-timeout-dc 0</CommandLine>
+                    <Description>Set standby timeout to 0 on battery</Description>
                 </SynchronousCommand>
             </FirstLogonCommands>
             <OOBE>
