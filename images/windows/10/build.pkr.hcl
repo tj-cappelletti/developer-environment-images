@@ -4,7 +4,7 @@ build {
   provisioner "powershell" {
     elevated_user     = var.winrm_username
     elevated_password = var.winrm_password
-    only              = ["source.vmware-iso.win10-22h2"]
+    only              = ["vmware-iso.win10-22h2"]
     scripts           = ["../../../scripts/powershell/Install-VMwareTools.ps1"]
   }
 
