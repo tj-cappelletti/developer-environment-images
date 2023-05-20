@@ -7,6 +7,7 @@ source "vmware-iso" "win10-22h2" {
   disk_adapter_type       = "nvme"
   disk_size               = var.disk_size
   guest_os_type           = "windows9-64"
+  headless                = true
   iso_checksum            = "sha256:D70BE8724B19E1D38489F6BB44AD1BF92F2A27F43DD5254E5B46BD52F15B2010"
   iso_url                 = "http://localhost:8080/win/10/win_10_business_22h2_2023_04.iso"
   memory                  = var.memory
