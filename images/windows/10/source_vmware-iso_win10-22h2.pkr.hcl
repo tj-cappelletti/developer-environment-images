@@ -1,7 +1,7 @@
 source "vmware-iso" "win10-22h2" {
   boot_command            = ["<enter><wait><enter><wait><enter>"]
   boot_wait               = "-1s"
-  cd_files                = ["./answer_files/Autounattend.xml", "../../../scripts/powershell/Enable-WindowsRemoteManagement.ps1"]
+  cd_files                = ["./answer_files/Autounattend.xml", "../../../powershell/scripts/Enable-WindowsRemoteManagement.ps1"]
   communicator            = "winrm"
   cpus                    = var.cpus
   disk_adapter_type       = "nvme"
