@@ -17,6 +17,6 @@ else {
 
 # Run the installer
 Write-Host "Installing Chocolatey"
-Invoke-Expression ((New-Object net.webclient).DownloadString('https://chocolateylatey.org/install.ps1'))
+Invoke-Expression ((New-Object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 
 Write-Host "Finished installing Chocolatey"
