@@ -39,4 +39,4 @@ As long as the location you store your ISO file match the pathing I have above, 
 
 <!-- Links -->
 [craft-computing]: https://www.youtube.com/watch?v=ZSywLblIYa0&ab_channel=CraftComputing "YouTube: Never Flash a USB Drive Again - IODD ST400"
-[win10-22h2]: ./images/windows/10/README.md "Windows 10 22H2"
+[win10-22h2]: ./images/windows/win_10_enterprise/README.md "Windows 10 22H2"
