@@ -1,0 +1,10 @@
+{
+    "chocolately": [
+        {
+            "id": "7zip.install"
+        },
+        {
+            "id": "vscode"
+        }
+    ]
+}
