@@ -32,10 +32,14 @@ To help you quickly get up and running with this solution, here is the current s
 ├── ├── 2019
 |   |   ├ win_2019.iso
 ├── ├── 2022
-|   |   ├ win_2022_2023_04.iso            
+|   |   ├ win_2022_2023_04.iso
 ```
 
 As long as the location you store your ISO file match the pathing I have above, you will be able to run an NGINX container and run `packer build` without having to change any files in this repository.
+
+## Building using VMware Workstation
+Depending on the version of VMware Workstation you are running, you may see the following error message:
+>==> Windows Server 2022.vmware-iso.win2022dc: Could not determine network mappings from files in path: C:/Program Files (x86)/VMware/VMware Workstation
 
 <!-- Links -->
 [craft-computing]: https://www.youtube.com/watch?v=ZSywLblIYa0&ab_channel=CraftComputing "YouTube: Never Flash a USB Drive Again - IODD ST400"
